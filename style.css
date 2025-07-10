@@ -200,6 +200,7 @@ h6 {
 }
 .about_row{
     --bs-gutter-x: 60px !important;
+    --bs-gutter-y: 40px !important;
 }
 h3.sub_head{
     font-size: 12px !important;
@@ -224,6 +225,7 @@ h3.sub_head{
     top: -150px;
     right: 0;
     width: 420px;
+    z-index: -1;
 }
 
 
