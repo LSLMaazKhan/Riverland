@@ -160,6 +160,7 @@ h6 {
     transition: all 0.5s ease;
     border-right: 1px solid #5E5E5E4D;
     opacity: 1;
+    z-index: 9;
 }
 
 .sidebar_col {
@@ -221,6 +222,7 @@ h6 {
 
 .about_row {
     --bs-gutter-x: 60px !important;
+    --bs-gutter-y: 40px !important;
 }
 
 h3.sub_head {
@@ -248,7 +250,14 @@ h3.sub_head {
     position: absolute;
     top: -150px;
     right: 0;
-    width: 420px;
+    max-width: 420px;
+    width: 100%;
+    z-index: -1;
+}
+
+.About_img {
+    max-width: 593px;
+    width: 100%;
 }
 
 .main-product-card .product-col {
