@@ -199,7 +199,7 @@ h6 {
     color: var(--black) !important;
 }
 .about_row{
-    --bs-gutter-x: 60px;
+    --bs-gutter-x: 60px !important;
 }
 h3.sub_head{
     font-size: 12px !important;
@@ -215,6 +215,18 @@ h3.sub_head{
   position: relative;
   bottom: -3px;
 }
+.about_cont {
+    position: relative;
+    overflow: hidden;
+}
+.element_leaf{
+    position: absolute;
+    top: -150px;
+    right: 0;
+    width: 420px;
+}
+
+
 @media(min-width: 768px) and (max-width: 1024px) {
     h1 {
         font-size: 80px !important;
