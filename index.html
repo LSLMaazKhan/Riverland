@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riverland</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- ================ Header ================== -->
+
+    <!-- ================ Top Bar ================== -->
+    <div class="container-fluid top_bar">
+        <div class="container">
+            <div class="row">
+                <div class="d-flex flex-row align-items-center justify-content-between top_col">
+                    <ul class="d-flex flex-row align-items-center justify-content-between">
+                        <li><i class="fa fa-map-marker-alt"></i> E2697 1130th Ave Boyceville, WI 54725</li>
+                        <li><i class="fa-solid fa-phone"></i> (715) 330-4608</li>
+                    </ul>
+                    <div class="social_col d-flex flex-row align-items-center">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-tiktok"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ================ Top Bar End ================== -->
+
+    <div class="container head_container">
+        <div class="d-flex flex-row align-items-center justify-content-between">
+            <img src="https://riverland.funnelpageinc.com/wp-content/uploads/2025/07/image-1-6.png" alt="Logo"
+                width="165">
+            <ul class="d-flex flex-row align-items-center justify-content-between nav_menu">
+                <li>Home</li>
+                <li>Products</li>
+                <li>Retail Store</li>
+                <li>News & Events</li>
+                <li>Reviews</li>
+                <li>Contact</li>
+            </ul>
+            <button class="glob_btn hed_btn">Shop Now</button>
+            <i id="ham_btn" class="fa-solid fa-bars ham_burger"></i>
+        </div>
+    </div>
+
+    
+    <div class="row sidebar_row">
+        <div
+            class="sidebar_col col-lg-12 col-md-12 col-sm-12 d-flex flex-column justify-content-start align-items-start">
+            <img src="https://riverland.funnelpageinc.com/wp-content/uploads/2025/07/image-1-6.png"
+                alt="header-logo" width="165">
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Services</li>
+            </ul>
+            <i id="close_btn" class="far fa-times-circle"></i>
+             <button class="glob_btn">Shop Now</button>
+        </div>
+    </div>
+<!-- ================ Header End ================== -->
+
+ <div class="container-fluid hero_sec d-flex flex-column align-items-center justify-content-center">
+        <div class="container">
+            <div class="row">
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                    <h1>Riverland</h1>
+                    <p>Farm & Ranch Equipment</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("ham_btn").onclick = function () {
+                document.querySelector(".sidebar_row").classList.toggle("sidebar_open");
+            };
+            document.getElementById("close_btn").onclick = function () {
+                document.querySelector(".sidebar_row").classList.remove("sidebar_open");
+            };
+        });
+    </script>
+</body>
+
+</html>
