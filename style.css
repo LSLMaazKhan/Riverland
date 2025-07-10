@@ -144,6 +144,7 @@ h6 {
     transition: all 0.5s ease;
     border-right: 1px solid #5E5E5E4D;
     opacity: 1;
+    z-index: 9;
 }
 
 .sidebar_col {
@@ -224,10 +225,14 @@ h3.sub_head{
     position: absolute;
     top: -150px;
     right: 0;
-    width: 420px;
+    max-width: 420px;
+      width: 100%;
     z-index: -1;
 }
-
+.About_img{
+    max-width: 593px;
+    width: 100%;
+}
 
 @media(min-width: 768px) and (max-width: 1024px) {
     h1 {
