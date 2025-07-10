@@ -198,11 +198,35 @@ h6 {
 .about_row h2{
     color: var(--black) !important;
 }
+.about_row{
+    --bs-gutter-x: 60px !important;
+}
 h3.sub_head{
     font-size: 12px !important;
     font-weight: 600 !important;
     font-family: 'poppins' !important;
 }
+.icon-image {
+  display: inline-block;
+  width: 36px;
+  height: 14px;
+  background-image: url('https://riverland.funnelpageinc.com/wp-content/uploads/2025/07/Group-31.webp');
+  background-size: cover;
+  position: relative;
+  bottom: -3px;
+}
+.about_cont {
+    position: relative;
+    overflow: hidden;
+}
+.element_leaf{
+    position: absolute;
+    top: -150px;
+    right: 0;
+    width: 420px;
+}
+
+
 @media(min-width: 768px) and (max-width: 1024px) {
     h1 {
         font-size: 80px !important;
