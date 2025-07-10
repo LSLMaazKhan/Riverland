@@ -16,6 +16,22 @@ body {
     color: var(--black) !important;
 }
 
+.color-white {
+    color: var(--white);
+}
+
+.color-black {
+    color: var(--black);
+}
+
+.font-poppins {
+    font-family: var(--font-body) !important;
+}
+
+.font-cormorant {
+    font-family: var(--font-heading) !important;
+}
+
 h1,
 h2,
 h3,
@@ -37,7 +53,7 @@ h2 {
 
 h3 {
     font-size: 38px !important;
-     color: var(--black) !important;
+    color: var(--black) !important;
 }
 
 h4 {
@@ -170,6 +186,7 @@ h6 {
     color: var(--primary);
     font-weight: 700;
 }
+
 .hero_sec {
     background-image: url('https://riverland.funnelpageinc.com/wp-content/uploads/2025/07/fc2cd9cb8eb2652d0d09866bf8a1ec0b62fbf227.webp');
     background-size: cover;
@@ -178,6 +195,7 @@ h6 {
     background-position: center;
     min-height: 400px;
 }
+
 .hero_sec:before {
     content: '';
     position: absolute;
@@ -187,45 +205,122 @@ h6 {
     top: 0;
     z-index: 0;
 }
+
 .hero_sec .row {
     z-index: 1;
     position: relative;
 }
-.py_8{
+
+.py_8 {
     padding: 80px 15px;
 }
 
-.about_row h2{
+.about_row h2 {
     color: var(--black) !important;
 }
-.about_row{
+
+.about_row {
     --bs-gutter-x: 60px !important;
 }
-h3.sub_head{
+
+h3.sub_head {
     font-size: 12px !important;
     font-weight: 600 !important;
     font-family: 'poppins' !important;
 }
+
 .icon-image {
-  display: inline-block;
-  width: 36px;
-  height: 14px;
-  background-image: url('https://riverland.funnelpageinc.com/wp-content/uploads/2025/07/Group-31.webp');
-  background-size: cover;
-  position: relative;
-  bottom: -3px;
+    display: inline-block;
+    width: 36px;
+    height: 14px;
+    background-image: url('https://riverland.funnelpageinc.com/wp-content/uploads/2025/07/Group-31.webp');
+    background-size: cover;
+    position: relative;
+    bottom: -3px;
 }
+
 .about_cont {
     position: relative;
     overflow: hidden;
 }
-.element_leaf{
+
+.element_leaf {
     position: absolute;
     top: -150px;
     right: 0;
     width: 420px;
 }
 
+.main-product-card .product-col {
+    height: 451px;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    display: flex;
+    align-items: end;
+    padding: 30px 20px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.product-content-col h2 {
+    font-size: 16px !important;
+}
+
+.product-content-col hr {
+    color: #fff;
+    opacity: 1;
+}
+
+.main-product-card .product-col:after {
+    position: absolute;
+    content: '';
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(13, 13, 13, 0.8) 100%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.product-content-col {
+    position: relative;
+    z-index: 1;
+}
+
+.main-product-card .product-col:before {
+    position: absolute;
+    content: '';
+    background: linear-gradient(183.36deg, rgba(255, 255, 255, 0) 33.19%, rgba(118, 0, 0, 0.8) 64.13%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+}
+
+.main-product-card .product-col:hover:after {
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.main-product-card .product-col:hover:before {
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+.main-product-card .product-col:after {
+    position: absolute;
+    content: '';
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(13, 13, 13, 0.8) 100%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+/* Media Quries Start */
 
 @media(min-width: 768px) and (max-width: 1024px) {
     h1 {
@@ -255,9 +350,10 @@ h3.sub_head{
     p {
         font-size: 16px !important;
     }
-    .py_8{
-     padding: 50px 15px !important;
-  }
+
+    .py_8 {
+        padding: 50px 15px !important;
+    }
 }
 
 @media only screen and (max-width:991px) {
@@ -310,9 +406,10 @@ h3.sub_head{
     h6 {
         font-size: 20px !important;
     }
-    .py_8{
-     padding: 40px 15px !important;
-  }
+
+    .py_8 {
+        padding: 40px 15px !important;
+    }
 }
 
 @media screen and (max-width:640px) {
