@@ -380,21 +380,63 @@ h3.sub_head {
     width: 100%;
 }
 
-.our-customer-row-1 .review-text-col-1,
+/* .our-customer-row-1 .review-text-col-1,
 .our-customer-row-1 .review-text-col-2 {
     max-width: 50%;
     width: 100%;
-}
+} */
 
 .our-customer-row-1 button {
     height: max-content;
 }
 
 .our-customer-reviews-section {
-    padding: 100px 0px;
+    padding: 100px 10px;
+    position: relative;
 }
 
+.our-customer-reviews-section .leaf-img-bg {
+    position: absolute;
+    max-width: 250px;
+    left: 0;
+    top: -55px;
+    z-index: -1;
+}
+
+.our-customer-reviews-section .our-customer-row-2 {
+    padding: 50px 0;
+    gap: 40px 14px;
+}
+
+.our-customer-row-2 .review-col {
+    padding: 50px 25px;
+    box-shadow: 0px 4px 9.8px 1px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.our-customer-row-2 .review-col:hover {
+    box-shadow: 0px 4px 9.8px 1px rgb(0 0 0 / 28%);
+}
+
+.icon-star-col i.fa-star {
+    color: #FF8000;
+}
+
+p.review-username {
+    width: max-content;
+    border-bottom: 2px solid #E50914;
+}
+
+
 /* Media Quries Start */
+@media(max-width:767px) {
+    .align-center-mobile {
+        text-align: center !important;
+    }
+}
 
 @media(min-width: 768px) and (max-width: 1024px) {
     h1 {
@@ -500,6 +542,14 @@ h3.sub_head {
     .featured-product-section .featured-product-row {
         row-gap: 50px;
         column-gap: 15px;
+        justify-content: center !important;
+    }
+}
+
+@media(max-width:1248px) {
+    .our-customer-reviews-section .our-customer-row-2 {
+        padding: 50px 0;
+        gap: 40px 14px;
         justify-content: center !important;
     }
 }
