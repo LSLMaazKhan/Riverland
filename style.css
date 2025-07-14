@@ -735,6 +735,9 @@ p.review-username {
         text-align: center;
         justify-content: center;
     }
+    .news-event-section .rope-left-bg {
+    top: 100px;
+}
 }
 
 @media screen and (max-width:640px) {
