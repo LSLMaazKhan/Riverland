@@ -500,7 +500,7 @@ p.review-username {
     max-width: 300px;
     width: 100%;
     z-index: 9;
-    top: 160px;
+    top: 65px;
 }
 .contact_col{
     position: relative;
@@ -551,7 +551,7 @@ p.review-username {
 .swiper-slide {
   text-align: center;
   display: flex;
-  align-items: center;
+  align-items: center !important;
   justify-content: center;
 }
 
@@ -565,7 +565,7 @@ p.review-username {
 .swiper-slide img:hover {
   transform: scale(1.05);
 }
-.logo-swiper div#swiper-wrapper-cf7cd91ff57b9159 {
+.slider_cont .logo-swiper div#swiper-wrapper-cf7cd91ff57b9159 {
     align-items: center !important;
 }
 
@@ -633,6 +633,15 @@ p.review-username {
     }
     .grid_hold{
         flex-wrap: wrap !important;
+    }
+    .news-event-col-1{
+        height: 450px !important;
+    }
+    .news_card{
+        min-height: 250px;
+    }
+    .news-event-col-3{
+        width: 98% !important;
     }
 }
 
