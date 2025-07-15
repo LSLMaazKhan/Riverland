@@ -513,7 +513,7 @@ p.review-username {
 
 .contact_col {
     position: relative;
-    border-radius: 16px;
+    border-radius: 5px;
     background-position: center !important;
     background-size: cover !important;
     padding: 40px 80px !important;
@@ -521,7 +521,7 @@ p.review-username {
 
 .form_col {
     position: relative;
-    border-radius: 16px;
+    border-radius: 5px;
     padding: 40px 40px !important;
     background: #E509141C;
 }
@@ -535,7 +535,7 @@ p.review-username {
     z-index: 0;
     left: 0;
     top: 0;
-    border-radius: 16px;
+    border-radius: 5px;
 }
 
 .contact_col h2,
@@ -857,6 +857,9 @@ p.review-username {
 
     .py_8 {
         padding: 40px 15px !important;
+    }
+    .form_row .contact_col {
+        padding: 40px !important;
     }
 }
 
